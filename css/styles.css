@@ -1,0 +1,20 @@
+@import "./normalize.css";
+
+:root {
+  --color-purple-to-blue: linear-gradient(#b95cff, #195ed3);
+  --color-yellow-to-orange: linear-gradient(#ffaf00, #ff8614);
+  --color-red-to-light-red: linear-gradient(#ff3051, #ff1c97);
+  --color-pink-to-dark-pink: linear-gradient(#fe14e7, #b81ee0);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Topography */
