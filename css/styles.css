@@ -3,6 +3,7 @@
 :root {
   --color-purple-to-blue: linear-gradient(#b95cff, #195ed3);
   --color-yellow-to-orange: linear-gradient(#ffaf00, #ff8614);
+  --color-orange-to-red-right: linear-gradient(to right, #ff8901, #ff314e);
   --color-red-to-light-red: linear-gradient(#ff3051, #ff1c97);
   --color-pink-to-dark-pink: linear-gradient(#fe14e7, #b81ee0);
 }
@@ -40,4 +41,30 @@ h2 {
 
 p {
   margin-top: 0;
+}
+
+/* Buttons */
+.btn {
+  padding: 2rem 6rem;
+  font-size: 2.3rem;
+  margin: 1rem;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn--outlined {
+  outline: none;
+  background: #fff;
+  box-shadow: 0 0 3px 3px #f3f3f3;
+  transition: all 0.15s;
+}
+
+.btn--outlined:hover {
+  background: var(--color-orange-to-red-right);
+  color: #fff;
+}
+
+.btn--colored {
+  background: linear-gradient(to right, #ff8a01, #ff314f);
+  color: #fff;
 }
