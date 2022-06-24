@@ -68,3 +68,28 @@ p {
   background: linear-gradient(to right, #ff8a01, #ff314f);
   color: #fff;
 }
+
+/* Lists */
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 6rem;
+}
+
+.list--arrow .list__item {
+  background: url("../images/Ellipse.png") no-repeat;
+  padding-left: 4rem;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+div {
+  height: 500px;
+  background-color: tomato;
+}
