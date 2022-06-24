@@ -4,8 +4,8 @@
   --color-purple-to-blue: linear-gradient(#b95cff, #195ed3);
   --color-yellow-to-orange: linear-gradient(#ffaf00, #ff8614);
   --color-orange-to-red-right: linear-gradient(to right, #ff8901, #ff314e);
-  --color-red-to-light-red: linear-gradient(#ff3051, #ff1c97);
-  --color-pink-to-dark-pink: linear-gradient(#fe14e7, #b81ee0);
+  --color-red-to-lightRed: linear-gradient(#ff3051, #ff1c97);
+  --color-pink-to-darkPink: linear-gradient(#fe14e7, #b81ee0);
 }
 
 html {
@@ -27,7 +27,7 @@ body {
 
 h1,
 h2 {
-  margin-bottom: 2rem;
+  margin: 0 0 2rem;
   font-weight: 500;
 }
 
@@ -89,7 +89,57 @@ p {
   margin-bottom: 1rem;
 }
 
-div {
-  height: 500px;
-  background-color: tomato;
+/* Cards */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  padding-right: 6.1rem;
+  position: relative;
+  box-shadow: 0 0 10px 5px #e6ebee;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.card--purple-to-blue {
+  background: var(--color-purple-to-blue);
+  color: #fff;
+}
+
+.card--yellow-to-orange {
+  background: var(--color-yellow-to-orange);
+  color: #fff;
+}
+
+.card--red-to-lightRed {
+  background: var(--color-red-to-lightRed);
+  color: #fff;
+}
+
+.card--pink-to-darkPink {
+  background: var(--color-pink-to-darkPink);
+  color: #fff;
+}
+
+.card:hover {
+  transform-origin: 50% 70%;
+  transform: perspective(100px) rotateX(1deg);
+  box-shadow: 7px 7px 10px #666;
+}
+
+.card:hover .card__arrow {
+  right: 3%;
+}
+
+.card__description {
+  margin-bottom: 0;
+}
+
+.card__arrow {
+  width: 2rem;
+  position: absolute;
+  bottom: 10%;
+  right: 5%;
+  transition: right 0.5s;
 }
