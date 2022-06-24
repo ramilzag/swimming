@@ -21,7 +21,7 @@ html {
 /* Topography */
 body {
   font-family: "Roboto", Georgia, "Times New Roman", Times, serif;
-  font-size: 2.3rem;
+  font-size: 2.1rem;
   font-weight: 400;
 }
 
@@ -102,6 +102,12 @@ p {
   transition: all 0.5s;
 }
 
+.card:hover {
+  transform-origin: 50% 70%;
+  transform: perspective(100px) rotateX(1deg);
+  box-shadow: 7px 7px 10px #666;
+}
+
 .card--purple-to-blue {
   background: var(--color-purple-to-blue);
   color: #fff;
@@ -122,12 +128,6 @@ p {
   color: #fff;
 }
 
-.card:hover {
-  transform-origin: 50% 70%;
-  transform: perspective(100px) rotateX(1deg);
-  box-shadow: 7px 7px 10px #666;
-}
-
 .card:hover .card__arrow {
   right: 3%;
 }
@@ -142,4 +142,50 @@ p {
   bottom: 10%;
   right: 5%;
   transition: right 0.5s;
+}
+
+/* Testimonial card */
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #f3f3f3;
+  padding: 12rem 2rem 2rem;
+}
+
+.testimonial__avatar {
+  position: absolute;
+  left: calc(50% - 7.5rem);
+  top: -7.5rem;
+  width: 15rem;
+}
+
+.testimonial__description {
+  font-weight: 300;
+}
+
+.testimonial__author {
+  font-size: 3.4rem;
+  color: #ff6300;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .testimonial {
+    padding: 7rem 2rem 1rem;
+  }
+
+  .testimonial__description {
+    font-size: 1.8rem;
+  }
+
+  .testimonial__avatar {
+    width: 12rem;
+    left: calc(50% - 6rem);
+  }
+
+  .testimonial__author {
+    font-size: 3rem;
+  }
 }
