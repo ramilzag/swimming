@@ -14,14 +14,21 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="collapsible collapsible--expanded">
-      <svg class="icon--small" onclick="expandMenu()">
+    <nav class="nav collapsible">
+      <h1 class="nav__heading">
+        <a href="/">Swimming</a> <span class="nav__reg-sign">&reg</span>
+      </h1>
+      <svg class="icon icon--blue nav__toggler" onclick="expandMenu()">
         <use xlink:href="./images/sprite.svg#menu"></use>
       </svg>
-      <div class="collapsible__content">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, rem!
-      </div>
-    </div>
+      <ul class="list nav__list collapsible__content">
+        <li class="nav__item"><a href="#">Home</a></li>
+        <li class="nav__item"><a href="#">About Us</a></li>
+        <li class="nav__item"><a href="#">Gallery</a></li>
+        <li class="nav__item"><a href="#">Blog</a></li>
+        <li class="nav__item"><a href="#">Contacts</a></li>
+      </ul>
+    </nav>
     <script src="./js/main.js"></script>
   </body>
 </html>
