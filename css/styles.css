@@ -97,15 +97,21 @@ p {
   padding: 2rem;
   padding-right: 6.1rem;
   position: relative;
-  box-shadow: 0 0 10px 5px #e6ebee;
+  box-shadow: 0 0 2px #e6ebee;
   cursor: pointer;
   transition: all 0.5s;
 }
 
-.card:hover {
+.card.card--perspectiveX:hover {
+  transform: perspective(100px) rotateY(1deg);
+  transform-origin: 0 50%;
+  box-shadow: -7px 7px 10px #666;
+}
+
+.card.card--perspectiveY:hover {
   transform-origin: 50% 70%;
   transform: perspective(100px) rotateX(1deg);
-  box-shadow: 7px 7px 10px #666;
+  box-shadow: 0 8px 8px -4px #666;
 }
 
 .card--purple-to-blue {
@@ -189,3 +195,5 @@ p {
     font-size: 3rem;
   }
 }
+
+/* Navigation bar */
