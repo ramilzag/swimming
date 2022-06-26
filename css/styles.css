@@ -56,7 +56,6 @@ a {
 .btn {
   padding: 2rem 6rem;
   font-size: 2.3rem;
-  margin: 1rem;
   border: 0;
   cursor: pointer;
 }
@@ -442,5 +441,70 @@ a {
 @media screen and (min-width: 1440px) {
   .hero__content {
     column-gap: 3rem;
+  }
+}
+
+/* Feature block */
+.feature {
+  gap: 3rem;
+  margin: 3rem auto;
+  transition: all 0.2s;
+}
+
+.feature__image {
+  width: 100%;
+  display: block;
+  padding: 0;
+}
+
+.feature__body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background: #f7f7f7;
+  padding: 3rem;
+}
+
+.feature__description {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.feature__body .btn {
+  font-size: 2rem;
+}
+
+@media screen and (max-width: 500px) {
+  .feature__body {
+    padding: 1.5rem;
+  }
+
+  .feature__heading {
+    font-size: 3.5rem;
+  }
+
+  .feature__description {
+    font-size: 1.8rem;
+  }
+
+  .feature__body .btn {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .feature.grid--1x2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .feature:nth-of-type(odd) picture {
+    order: 1;
+  }
+
+  .feature.grid--1x2 {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
