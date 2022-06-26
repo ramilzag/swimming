@@ -14,28 +14,26 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="showcase">
+    <div class="container block grid grid--1x2 events">
       <picture>
-        <source type="image/webp" srcset="images/showcase.webp" />
-        <source type="image/jpg" srcset="images/showcase.jpg" />
+        <source type="image/webp" srcset="images/events.webp" />
+        <source type="image/jpg" srcset="images/events.jpg" />
         <img
-          class="showcase__image"
+          class="event__image"
           loading="lazy"
-          src="images/showcase.jpg"
-          alt="Person jumping into a pool"
+          src="images/events.jpg"
+          alt="Person surfaces from underwater"
         />
       </picture>
-      <div class="block showcase__banner">
-        <h2 class="showcase__banner-heading">
-          Why Our Swimming School is Rated #1 in The Region
-        </h2>
-        <p class="showcase__banner-description">
-          We offer a variety of private and group lessons for children and
-          teens. The lessons and swimming courses include everything your kid
-          needs to swim confidently. Swimming School is proud to provide state
-          of the art aquatic facilities.
-        </p>
-        <button class="btn btn--outlined">Read More</button>
+      <div class="event__content">
+        <h2 class="event__heading">Our Events</h2>
+        <ul class="list list--arrow">
+          <li class="list__item">Lorem ipsum dolor sit amet.</li>
+          <li class="list__item">Lorem ipsum dolor, sit amet consectetur.</li>
+          <li class="list__item">Lorem ipsum dolor sit.</li>
+          <li class="list__item">Lorem ipsum dolor sit amet consectetur.</li>
+          <li class="list__item">Lorem ipsum dolor sit amet.</li>
+        </ul>
       </div>
     </div>
     <script src="./js/main.js"></script>
