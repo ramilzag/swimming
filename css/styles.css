@@ -2,6 +2,7 @@
 
 :root {
   --color-purple-to-blue: linear-gradient(#b95cff, #195ed3);
+  --color-purple-to-blue-right: linear-gradient(to right, #b95cff, #195ed3);
   --color-yellow-to-orange: linear-gradient(#ffaf00, #ff8614);
   --color-orange-to-red-right: linear-gradient(to right, #ff8901, #ff314e);
   --color-red-to-lightRed: linear-gradient(#ff3051, #ff1c97);
@@ -63,17 +64,17 @@ a {
 .btn--outlined {
   outline: none;
   background: #fff;
-  box-shadow: 0 0 3px 3px #f3f3f3;
+  box-shadow: 0 0 2px #666;
   transition: all 0.15s;
 }
 
 .btn--outlined:hover {
-  background: var(--color-orange-to-red-right);
+  background: var(--color-purple-to-blue-right);
   color: #fff;
 }
 
 .btn--colored {
-  background: linear-gradient(to right, #ff8a01, #ff314f);
+  background: linear-gradient(--color-orange-to-red-right);
   color: #fff;
 }
 
@@ -351,7 +352,13 @@ a {
 
 /* Blocks */
 .block {
-  padding: 0 1rem;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .block {
+    padding: 0 4rem;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -506,5 +513,60 @@ a {
 
   .feature.grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Showcase block */
+.showcase {
+  position: relative;
+}
+
+.showcase__image {
+  width: 100%;
+  display: block;
+}
+
+.showcase__banner-heading {
+  margin-bottom: 2rem;
+  font-size: 3.3rem;
+}
+
+.showcase__banner-description {
+  font-size: 1.6rem;
+  margin-bottom: 3rem;
+}
+
+.showcase .btn {
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.showcase__banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: var(--color-red-to-lightRed);
+  color: #fff;
+  opacity: 0.9;
+}
+
+@media screen and (min-width: 768px) {
+  .showcase__banner {
+    position: absolute;
+    max-width: 64rem;
+    margin-left: 8rem;
+    height: 100%;
+    top: 0;
+  }
+
+  .showcase__banner-heading {
+    font-size: 4.1rem;
+    margin-bottom: 3rem;
+  }
+
+  .showcase__banner-description {
+    font-size: 2.2rem;
+    margin-bottom: 5rem;
   }
 }
