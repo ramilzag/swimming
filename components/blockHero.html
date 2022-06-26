@@ -1,10 +1,16 @@
 <div class="hero">
-  <picture>
-    <source type="image/webp" srcset="images/banner.webp" />
-    <source type="image/jpg" srcset="images/banner.jpg" />
-    <img src="images/banner.jpg" alt="Person swimming underwater in a pool" />
-  </picture>
-  <div class="container grid grid--1x4 hero__content">
+  <div class="hero__image-container">
+    <picture>
+      <source type="image/webp" srcset="images/banner.webp" />
+      <source type="image/jpg" srcset="images/banner.jpg" />
+      <img
+        class="hero__banner"
+        src="images/banner.jpg"
+        alt="Person swimming underwater in a pool"
+      />
+    </picture>
+  </div>
+  <div class="grid grid--1x4 hero__content">
     <div class="card card--yellow-to-orange card--perspectiveY hero__card">
       <h2 class="hero__heading">Register for swim lessons</h2>
       <p class="hero__description">

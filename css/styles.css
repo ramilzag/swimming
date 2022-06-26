@@ -101,7 +101,7 @@ a {
   padding: 2rem;
   padding-right: 6.1rem;
   position: relative;
-  box-shadow: 0 0 2px #e6ebee;
+  box-shadow: 0 0 10px #666;
   border-radius: 40px;
   cursor: pointer;
   transition: all 0.5s;
@@ -350,6 +350,17 @@ a {
   }
 }
 
+/* Blocks */
+.block {
+  padding: 0 1rem;
+}
+
+@media screen and (min-width: 1440px) {
+  .block {
+    padding: 0 8rem;
+  }
+}
+
 /* Grids */
 
 .grid {
@@ -375,13 +386,22 @@ a {
 }
 
 /* Hero component */
-.hero img {
+.hero__banner {
   width: 100%;
+  display: block;
+  position: relative;
+  z-index: -1;
+}
+
+.hero__image-container {
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0.15)
+  );
 }
 
 .hero__content {
   position: relative;
-  padding: 0 1rem;
   gap: 2rem;
   top: -5rem;
   transition: all 0.2s;
