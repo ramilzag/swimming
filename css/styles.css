@@ -822,3 +822,24 @@ a {
     font-size: 5rem;
   }
 }
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.footer__info {
+  font-weight: 300;
+  opacity: 0.6;
+}
+
+@media screen and (max-width: 500px) {
+  .footer {
+    padding: 4rem 1rem;
+  }
+
+  .footer__info {
+    font-size: 1.8rem;
+  }
+}
