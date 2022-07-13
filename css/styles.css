@@ -59,6 +59,11 @@ a {
   font-size: 2.3rem;
   border: 0;
   cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.02);
 }
 
 .btn--outlined {
@@ -100,13 +105,16 @@ a {
   padding: 2rem;
   padding-right: 6.1rem;
   position: relative;
-  box-shadow: 0 0 3px #666;
   cursor: pointer;
   transition: all 0.5s;
 }
 
 .card--rounded {
   border-radius: 40px;
+}
+
+.card:hover {
+  transform: scale(1.03);
 }
 
 .card.card--perspectiveX:hover {
@@ -354,12 +362,12 @@ a {
 
 /* Blocks */
 .block {
-  padding: 1rem;
+  padding: 2rem 1rem;
 }
 
 @media screen and (min-width: 768px) {
   .block {
-    padding: 0 4rem;
+    padding: 0 2rem;
   }
 }
 
@@ -412,6 +420,7 @@ a {
   position: relative;
   gap: 2rem;
   top: -5rem;
+  margin-bottom: -5rem;
   transition: all 0.2s;
 }
 
@@ -455,8 +464,8 @@ a {
 
 /* Feature block */
 .feature {
-  gap: 3rem;
-  margin: 3rem auto;
+  gap: 2rem;
+  margin: 0 auto;
   transition: all 0.2s;
 }
 
@@ -506,6 +515,10 @@ a {
   .feature.grid--1x2 {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .feature {
+    margin-bottom: 2rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -521,6 +534,7 @@ a {
 /* Showcase block */
 .showcase {
   position: relative;
+  margin-top: 2rem;
 }
 
 .showcase__image {
@@ -554,6 +568,10 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .showcase {
+    margin-top: 8rem;
+  }
+
   .showcase__banner {
     position: absolute;
     max-width: 64rem;
@@ -578,6 +596,7 @@ a {
 .events {
   gap: 1rem;
   transition: all 0.2s;
+  margin-top: 2rem;
 }
 
 .event__image {
@@ -608,6 +627,10 @@ a {
 @media screen and (min-width: 768px) {
   .events.grid--1x2 {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .events {
+    margin-top: 8rem;
   }
 }
 
@@ -669,8 +692,20 @@ a {
 
 .testimonials {
   gap: 10rem 3rem;
-  margin-top: 10rem;
+  margin-top: 6rem;
   transition: all 0.2s;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonials {
+    margin-top: 12rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .testimonials {
+    margin-top: 15rem;
+  }
 }
 
 /* Contact block */
@@ -722,6 +757,7 @@ a {
 .contacts__media {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
   align-items: center;
 }
 
@@ -787,6 +823,10 @@ a {
 @media screen and (min-width: 768px) {
   .contacts.grid--1x2 {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contacts {
+    margin-top: 8rem;
   }
 }
 

@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is a swimming concept responsive web design implementation for a swimming related website."
+    />
+    <meta property="og:title" content="Swimming..." />
+    <meta
+      property="og:description"
+      content="This is a swimming concept responsive web design implementation for a swimming related website."
+    />
+    <meta property="og:image" content="http://" />
+    <meta property="og:type" content="website" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,12 +22,276 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <title>Swimming is fun</title>
   </head>
   <body>
+    <header>
+      <nav class="nav collapsible">
+        <h1 class="nav__heading">
+          <a href="/">Swimming</a> <span class="nav__reg-sign">&reg;</span>
+        </h1>
+        <svg class="icon icon--blue nav__toggler" onclick="expandMenu()">
+          <use xlink:href="./images/sprite.svg#menu"></use>
+        </svg>
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="#">Home</a></li>
+          <li class="nav__item"><a href="#">About Us</a></li>
+          <li class="nav__item"><a href="#">Gallery</a></li>
+          <li class="nav__item"><a href="#">Blog</a></li>
+          <li class="nav__item"><a href="#">Contacts</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="hero">
+      <div class="hero__image-container">
+        <picture>
+          <source type="image/webp" srcset="images/banner.webp" />
+          <source type="image/jpg" srcset="images/banner.jpg" />
+          <img
+            class="hero__banner"
+            src="images/banner.jpg"
+            alt="Person swimming underwater in a pool"
+          />
+        </picture>
+      </div>
+      <div class="block grid grid--1x4 hero__content">
+        <div
+          class="card card--rounded card--yellow-to-orange card--perspectiveY hero__card"
+        >
+          <h2 class="hero__heading">Register for swim lessons</h2>
+          <p class="hero__description">
+            Our experienced instructors offer a variety of swimming lessons for
+            children and teens.
+          </p>
+          <img
+            class="card__arrow"
+            src="./images/Arrow.png"
+            alt="arrow point to right"
+          />
+        </div>
+        <div
+          class="card card--rounded card--purple-to-blue card--perspectiveX hero__card"
+        >
+          <h2 class="hero__heading">Franchise Opportunities</h2>
+          <p class="hero__description">
+            Swimming School Franchise is positioned as the leader in the
+            thriving children's education
+          </p>
+          <img
+            class="card__arrow"
+            src="./images/Arrow.png"
+            alt="arrow point to right"
+          />
+        </div>
+        <div
+          class="card card--rounded card--red-to-lightRed card--perspectiveY hero__card"
+        >
+          <h2 class="hero__heading">What Level is My Child?</h2>
+          <p class="hero__description">
+            Use our Level Finder to determine your swimmer's level or call us
+            for any assistance you need!
+          </p>
+          <img
+            class="card__arrow"
+            src="./images/Arrow.png"
+            alt="arrow point to right"
+          />
+        </div>
+        <div
+          class="card card--rounded card--pink-to-darkPink card--perspectiveX hero__card"
+        >
+          <h2 class="hero__heading">Locate a Swim School</h2>
+          <p class="hero__description">
+            Please check our map to find the nearest Swim School or call us for
+            any assistance you need!
+          </p>
+          <img
+            class="card__arrow"
+            src="./images/Arrow.png"
+            alt="arrow point to right"
+          />
+        </div>
+      </div>
+    </div>
+    <div class="container block grid grid--1x2 feature">
+      <picture>
+        <source type="image/webp" srcset="images/featureImg1.webp" />
+        <source type="image/jpg" srcset="images/featureImg1.jpg" />
+        <img
+          class="feature__image"
+          loading="lazy"
+          src="images/featureImg1.jpg"
+          alt="Person surfaces from underwater"
+        />
+      </picture>
+      <div class="feature__body">
+        <h2 class="feature__heading">Welcome to our school!</h2>
+        <p class="feature__description">
+          Swimming School is proud to provide state-of-the-art aquatic
+          facilities that are dedicated to indoor swim classes and programs for
+          children.
+        </p>
+        <button class="btn btn--colored">Read More</button>
+      </div>
+    </div>
+    <div class="container block grid grid--1x2 feature">
+      <picture>
+        <source type="image/webp" srcset="images/featureImg2.webp" />
+        <source type="image/jpg" srcset="images/featureImg2.jpg" />
+        <img
+          class="feature__image"
+          loading="lazy"
+          src="images/featureImg2.jpg"
+          alt="Person swimming on its side"
+        />
+      </picture>
+      <div class="feature__body">
+        <h2 class="feature__heading">Swim lessons for Children and teens</h2>
+        <p class="feature__description">
+          We offer a variety of private and group lessons for children and
+          teens. The lessons and swimming courses include everything your kid
+          needs to swim confidently.
+        </p>
+        <button class="btn btn--colored">Read More</button>
+      </div>
+    </div>
+    <div class="showcase">
+      <picture>
+        <source type="image/webp" srcset="images/showcase.webp" />
+        <source type="image/jpg" srcset="images/showcase.jpg" />
+        <img
+          class="showcase__image"
+          loading="lazy"
+          src="images/showcase.jpg"
+          alt="Person jumping into a pool"
+        />
+      </picture>
+      <div class="block showcase__banner">
+        <h2 class="showcase__banner-heading">
+          Why Our Swimming School is Rated #1 in The Region
+        </h2>
+        <p class="showcase__banner-description">
+          We offer a variety of private and group lessons for children and
+          teens. The lessons and swimming courses include everything your kid
+          needs to swim confidently. Swimming School is proud to provide state
+          of the art aquatic facilities.
+        </p>
+        <button class="btn btn--outlined">Read More</button>
+      </div>
+    </div>
+    <div class="container block grid grid--1x2 events">
+      <picture>
+        <source type="image/webp" srcset="images/events.webp" />
+        <source type="image/jpg" srcset="images/events.jpg" />
+        <img
+          class="event__image"
+          loading="lazy"
+          src="images/events.jpg"
+          alt="Person surfaces from underwater"
+        />
+      </picture>
+      <div class="event__content">
+        <h2 class="event__heading">Our Events</h2>
+        <ul class="list list--arrow">
+          <li class="list__item">Lorem ipsum dolor sit amet.</li>
+          <li class="list__item">Lorem ipsum dolor, sit amet consectetur.</li>
+          <li class="list__item">Lorem ipsum dolor sit.</li>
+          <li class="list__item">Lorem ipsum dolor sit amet consectetur.</li>
+          <li class="list__item">Lorem ipsum dolor sit amet.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container block grid grid--1x4 testimonials">
+      <div class="card testimonial">
+        <p class="testimonial__description">
+          Thank you for making me a confident swimmer! I hope to learn more from
+          school's instructors during future lessons
+        </p>
+        <p class="testimonial__author">Anne, 25 y.o.</p>
+        <img
+          class="testimonial__avatar"
+          src="./images/avatar1.png"
+          alt="arrow point to right"
+        />
+      </div>
+      <div class="card testimonial">
+        <p class="testimonial__description">
+          I hated swimming until I joined this swimming school. Their lessons
+          improved my swimming and breathing skills.
+        </p>
+        <p class="testimonial__author">Jane, 23 y.o.</p>
+        <img
+          class="testimonial__avatar"
+          src="./images/avatar2.png"
+          alt="arrow point to right"
+        />
+      </div>
+      <div class="card testimonial">
+        <p class="testimonial__description">
+          I have been going here for swimming lessons for over 3 years and it
+          helped me become a better swimmer.
+        </p>
+        <p class="testimonial__author">Peter, 28 y.o.</p>
+        <img
+          class="testimonial__avatar"
+          src="./images/avatar3.png"
+          alt="arrow point to right"
+        />
+      </div>
+      <div class="card testimonial">
+        <p class="testimonial__description">
+          Joing this school has changed my life as I was afraid of water before
+          but now I like it a lot, thanks to your lessons.
+        </p>
+        <p class="testimonial__author">Sam, 20 y.o.</p>
+        <img
+          class="testimonial__avatar"
+          src="./images/avatar4.png"
+          alt="arrow point to right"
+        />
+      </div>
+    </div>
+    <div class="container block grid grid--1x2 contacts">
+      <picture>
+        <source type="image/webp" srcset="images/contacts.webp" />
+        <source type="image/jpg" srcset="images/contacts.jpg" />
+        <img
+          class="contact__map"
+          loading="lazy"
+          src="images/contacts.jpg"
+          alt="Map location of swimming school"
+        />
+      </picture>
+      <div class="contacts__body">
+        <h2 class="contacts__heading">Contacts</h2>
+        <p class="contacts__address">
+          Address: 4578 Marmora Road, Glasgow D04 89GR
+        </p>
+        <div class="contacts__phone">
+          <div class="bg-phone"></div>
+          <span class="contacts__phone-number">1-800-2345-6789</span>
+        </div>
+        <p class="contacts__email">Email: youremail.com</p>
+        <div class="contacts__media">
+          <a class="contacts__media-item" href="#">
+            <div class="bg-instagram"></div>
+          </a>
+          <a class="contacts__media-item" href="#">
+            <div class="bg-facebook"></div>
+          </a>
+          <a class="contacts__media-item" href="#">
+            <div class="bg-twitter"></div>
+          </a>
+          <a class="contacts__media-item" href="#">
+            <div class="bg-whatsapp"></div>
+          </a>
+        </div>
+      </div>
+    </div>
     <footer class="container footer">
       <p class="footer__info">
-        Swimming &copy 2020. All Rights Reserved. Privacy Policy.
+        Swimming &copy; 2020. All Rights Reserved. Privacy Policy.
+        <a href="https://www.freepik.com">Designed by Freepik</a>
       </p>
     </footer>
     <script src="./js/main.js"></script>
