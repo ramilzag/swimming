@@ -118,7 +118,7 @@ a {
 }
 
 .card.card--perspectiveX:hover {
-  transform: perspective(100rem) rotateY(10deg);
+  transform: perspective(100rem) rotateY(5deg);
   transform-origin: 0 50%;
   box-shadow: -7px 7px 10px #666;
 }
@@ -695,7 +695,6 @@ a {
 .testimonials {
   gap: 10rem 3rem;
   margin-top: 6rem;
-  transition: all 0.2s;
 }
 
 @media screen and (min-width: 768px) {
@@ -791,9 +790,9 @@ a {
 }
 
 .contacts__phone-number {
-  margin-left: 2rem;
   font-size: 3rem;
-  color: #fff;
+  margin-left: 2rem;
+  margin-bottom: 0;
 }
 
 .contacts__address {
@@ -811,7 +810,7 @@ a {
 @media screen and (max-width: 500px) {
   .contacts__phone-number {
     margin-left: 1rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
 
   .contacts__address {
@@ -831,6 +830,10 @@ a {
   .contacts {
     margin-top: 8rem;
   }
+
+  .contacts__phone-number {
+    font-size: 4rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -848,7 +851,7 @@ a {
 
   .contacts__phone-number {
     margin-left: 3rem;
-    font-size: 3rem;
+    font-size: 4.5rem;
   }
 
   .contacts__address {
